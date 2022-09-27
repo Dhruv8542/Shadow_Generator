@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+            rel="stylesheet">
+            <link rel="stylesheet" href="square-box.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- Box to contain target box -->
+            <div class="box1">
+                <div id="target" class="target">
+                </div>
+            </div>
+            
+            <!-- box to contain input and code editor -->
+            <div class="box">
+
+                <!-- Input box -->
+                <div class="box2">
+
+                    <!-- Width -->
+                    <h3>Width:</h3>(px)
+                    <input type="range" name="" id="Width" min=0 max="500"
+                        value=100>
+
+                    <!-- Height -->
+                    <h3>Height:</h3>(px)
+                    <input type="range" name="" id="Height" min=0 max="500"
+                        value=100>
+                    
+                    <!-- Radius Property -->
+                    <h3>Radius:</h3>(px)
+                    <input type="range" name="" id="Radius" min=0 max="250"
+                        value=10>
+
+                    <!-- Color Property -->
+                    <h3>Color:</h3>
+                    <input type="color" name="" id="Color" class="Color"
+                        value="#cdc3e4">
+                    <br><br>
+                    <hr>
+
+                    <!-- Box Shadow Properties -->
+                    <h3>Box Shadow:</h3>
+                    <table>
+                        <tr>
+                            <td>OffsetX:</td>
+                            <td><input type="range" name="" id="offsetX"
+                                    class="shadow_input" min=-50 max=50
+                                    value=10></td>
+                        </tr>
+                        <tr>
+                            <td>OffsetY:</td>
+                            <td>
+                                <input type="range" name="" id="offsetY"
+                                    class="shadow_input" min=-50 max=50
+                                    value=10>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Blur-Radius:</td>
+                            <td>
+                                <input type="range" name="" id="BlurR"
+                                    class="shadow_input" min=0 max=100 value=10>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Spread-Radius:</td>
+                            <td>
+                                <input type="range" name="" id="SpreadR"
+                                    class="shadow_input" min=-50 max=50 value=0>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Shadow-Color:</td>
+                            <td>
+                                <input type="color" name="" id="SColor"
+                                    class="shadow_input Color" value=#615e5e>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div id="box3" class="box3">
+                    <span>width:</span> <span class="number">100</span>px;<br>
+                    <span>height:</span> <span class="number">100</span>px;<br>
+                    <span>border-radius:</span> <span class="number">10</span>px;<br>
+                    <span>background-color:</span> <span class="number">rgb(195,205,228)</span>;<br>
+                    <span>box-shadow: </span><span class="number">10</span>px
+                    <span class="number">10</span>px <span class="number">10</span>px <span class="number">0</span>px
+                    <span class="number">rgb(97, 94, 94)</span>;
+                </div>
+            </div>
+        </div>
+        <script src="square-box.js"></script>
+    </body>
+</html>
